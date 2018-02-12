@@ -1,0 +1,5 @@
+https://e2e.ti.com/support/arm/sitara_arm/f/791/p/438837/1630390
+
+#Software che interagisce con il processore:
+https://github.com/jadonk/pru-software-support-package/blob/master/labs/lab_3/solution/PRU_HDQ_TempSensor1/temp_monitor_master_1.c
+
