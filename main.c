@@ -57,8 +57,8 @@ int main(void)
     CT_ECAP.ECEINT = ECEINT_CFG;
 
     // Configure & start ecap
-    CT_ECAP.ECCTL1 = ECCTL1_CFG;
-    CT_ECAP.ECCTL2 = ECCTL2_CFG & EC_STOP_MSK;
+    CT_ECAP.ECCTL1 = ECCTL1_CFG; // all rising edge, reset counter at any capture
+    CT_ECAP.ECCTL2 = ECCTL2_CFG & EC_STOP_MSK; // continuous, capture mode, wrap after capture 4, rearm, free running,synci/o disabled
 
     uint8_t active = 0;
 
